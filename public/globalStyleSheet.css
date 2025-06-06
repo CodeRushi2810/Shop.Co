@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap');
+
+.heading-xl {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.heading-lg {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.3;
+  letter-spacing: -0.25px;
+}
+
+.heading-md {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: 0px;
+}
+
+.heading-sm {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0px;
+}
+
+.subheading {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.15px;
+}
+
+.paragraph {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+}
+
+.caption {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.4px;
+}
+
+.small {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+}
+
+/* Medium Devices */
+@media (min-width: 768px) {
+  .heading-xl {
+    font-size: 36px;
+  }
+  .heading-lg {
+    font-size: 32px;
+  }
+  .heading-md {
+    font-size: 28px;
+  }
+  .heading-sm {
+    font-size: 24px;
+  }
+  .subheading {
+    font-size: 18px;
+  }
+  .paragraph {
+    font-size: 16px;
+  }
+  .caption {
+    font-size: 13px;
+  }
+  .small {
+    font-size: 11px;
+  }
+}
+
+/* Large Devices */
+@media (min-width: 992px) {
+  .heading-xl {
+    font-size: 42px;
+  }
+  .heading-lg {
+    font-size: 36px;
+  }
+  .heading-md {
+    font-size: 30px;
+  }
+  .heading-sm {
+    font-size: 26px;
+  }
+  .subheading {
+    font-size: 18px;
+  }
+  .paragraph {
+    font-size: 17px;
+  }
+  .caption {
+    font-size: 14px;
+  }
+  .small {
+    font-size: 12px;
+  }
+}
+
+/* Extra Large Devices */
+@media (min-width: 1200px) {
+  .heading-xl {
+    font-size: 48px;
+  }
+  .heading-lg {
+    font-size: 40px;
+  }
+  .heading-md {
+    font-size: 32px;
+  }
+  .heading-sm {
+    font-size: 28px;
+  }
+  .subheading {
+    font-size: 20px;
+  }
+  .paragraph {
+    font-size: 18px;
+  }
+  .caption {
+    font-size: 14px;
+  }
+  .small {
+    font-size: 12px;
+  }
+}
