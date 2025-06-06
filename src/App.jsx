@@ -1,13 +1,10 @@
-import Counter from './Counter'
-import Theater from './Theater'
+import HomePage from './Pages/HomePage/HomePage'
 function App() {
-
-  return (
-    <>
-      {/* <Counter/>  */}
-      <Theater />
-    </>
-  )
+    return (
+        <>
+            <HomePage />
+        </>
+    );
 }
 
-export default App
+export default App;
