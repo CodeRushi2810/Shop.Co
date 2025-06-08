@@ -4,30 +4,37 @@ import { ReactComponent as ProfileIcon } from '../../src/assets/Images/profile.s
 import { ReactComponent as DownArrowIcon } from '../../src/assets/Images/downArrow.svg';
 import '../globalStyleSheet.css';
 import './Navbar.css';
+import Hamburger from '../Hamburger/Hamburger';
 
 function Navbar() {
     return (
         <>
             <div className='flex justify-center'>
-                <ul className='flex items-center gap-10 w-full px-2 my-7 md:max-w-7xl md:my-7 md:px-0'>
-                    <li className='flex'>
-                        <h3 className='heading-xl text-4xl font-black'>SHOP.CO</h3>
+                <ul className='flex items-center w-full px-4 py-6 md:max-w-screen-xl md:px-0 md:gap-10 md:max-xl:px-4'>
+                    <li className='flex mr-4 md:hidden'>
+                        <Hamburger />
                     </li>
-                    <li className='flex gap-6 items-center'>
+                    <li className='flex mr-auto md:mr-0'>
+                        <h3 className='logo md:heading-xl md:text-4xl md:font-black'>SHOP.CO</h3>
+                    </li>
+                    <li className='hidden md:flex md:gap-6 md:items-center '>
                         <a className='paragraph flex items-center gap-1'>Shop <DownArrowIcon width={16} height={16} fill="#000000" /></a>
                         <a className='paragraph'>On Sale</a>
                         <a className='paragraph'>New Arrivals</a>
                         <a className='paragraph'>Brands</a>
                     </li>
-                    <li className='flex searchInputContainer'>
+                    <li className='hidden md:flex searchInputContainer'>
                         <div className='flex items-center gap-3 searchInputWrapper paragraph py-3 px-4 rounded-full'>
                             <div>
-                                <SearchIcon width={32} height={32} fill="#909090" />
+                                <SearchIcon width={24} height={24} fill="#909090" />
                             </div>
                             <input type="text" className='outline-none searchInputWrapper' placeholder='Search for products...' />
                         </div>
                     </li>
                     <li className='flex gap-4'>
+                        <div className='md:*:hidden'>
+                            <SearchIcon width={24} height={24} fill="#000000" />
+                        </div>
                         <div>
                             <CartIcon width={24} height={24} fill="#000000" />
                         </div>

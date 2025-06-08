@@ -1,3 +1,11 @@
 .bannerContainer{
     background-color: #F2F0F1;
 }
+.subHeadingText{
+    color: rgba(0, 0, 0, 0.60);;
+}
+.line{
+    width: 1px;
+    background: rgba(0, 0, 0, 0.10);
+    height: 52px;
+}
