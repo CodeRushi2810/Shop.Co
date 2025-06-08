@@ -1,12 +1,14 @@
 import Infobar from '../../../public/Infobar/Infobar';
 import Navbar from '../../../public/Navbar/Navbar';
 import Banner from './Components/Banner';
+import Brands from './Components/Brands';
 function HomePage() {
     return (
         <>
             <Infobar />
             <Navbar />
             <Banner />
+            <Brands />
 
             {/* <div>
                 <h1 className="heading-xl mt-8 ml-8">Build Beautiful Experiences</h1>

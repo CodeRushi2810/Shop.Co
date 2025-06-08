@@ -1,9 +1,18 @@
-.searchInputContainer{
-    flex: 1 0 0;
+.logo {
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+  font-size: 25.2px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
 }
 
-.searchInputWrapper{
-    background-color: #F0F0F0;
-    color: rgba(0, 0, 0, 0.40);
-    width: 100%;
+.searchInputContainer {
+  flex: 1 0 0;
+}
+
+.searchInputWrapper {
+  background-color: #f0f0f0;
+  color: rgba(0, 0, 0, 0.4);
+  width: 100%;
 }
