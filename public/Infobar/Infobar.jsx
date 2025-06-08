@@ -4,8 +4,8 @@ import '../globalStyleSheet.css';
 function Infobar() {
     return (
         <>
-            <div className='bg-black flex justify-center px-1 py-4 sm:p-4'>
-                <div className='infobarWrapper flex justify-between items-center w-full md:max-w-7xl'>
+            <div className='bg-black'>
+                <div className='flex justify-between items-center py-4 container mx-auto px-4'>
                     <h1 className='text-white paragraph ml-auto'>Sign up and get 20% off to you first order.</h1>
                     <a href="https://google.com" className='text-white paragraph underline ml-2 mr-auto'>Sign Up Now</a>
                     <button className='hidden sm:block'>

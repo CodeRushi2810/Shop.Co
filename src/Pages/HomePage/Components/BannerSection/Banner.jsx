@@ -1,12 +1,12 @@
-import '../../../../public/globalStyleSheet.css';
+import '../../../../../public/globalStyleSheet.css';
 import './Banner.css';
-import heroBannerMobileImage from '../../../assets/Images/heroBannerMobile.png';
+import heroBannerMobileImage from '../../../../assets/Images/heroBannerMobile.png';
 
 function Banner() {
     return (
         <>
             <div className='bannerContainer flex justify-center'>
-                <div className='w-full pt-6 md:max-w-screen-xl md:px-0 md:gap-10 md:max-xl:px-4 md:flex items-center'>
+                <div className='flex flex-col items-center md:flex-row gap-4 pt-6 container mx-auto px-4'>
                     <div className='md:w-1/2'>
                         <div className='pt-10 px-4 flex flex-col md:p-0'>
                             <h1 className='heading-xl w-full md:max-w-lg mb-2'>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
@@ -14,7 +14,7 @@ function Banner() {
                             <button className='bg-black text-white py-2 rounded-full md:w-52'>Shop Now</button>
                         </div>
                         <div>
-                            <div className='flex items-center justify-center gap-8 px-14 py-6 md:px-0 md:justify-start'>
+                            <div className='flex items-center justify-center gap-4 px-14 py-6 md:px-0 md:justify-start'>
                                 <div>
                                     <p className='heading-md'>200+</p>
                                     <p className='subHeadingText caption'>International Brands</p>
@@ -39,7 +39,7 @@ function Banner() {
                         </div>
                     </div>
                     <div className='md:w-1/2'>
-                        <img src={heroBannerMobileImage} alt="Shop Co" className='w-full' />
+                        <img src={heroBannerMobileImage} alt="Shop Co" className='w-full h-full' />
                     </div>
                 </div>
             </div>
