@@ -9,8 +9,8 @@ import Hamburger from '../Hamburger/Hamburger';
 function Navbar() {
     return (
         <>
-            <div className='flex justify-center'>
-                <ul className='flex items-center w-full px-4 py-6 md:max-w-screen-xl md:px-0 md:gap-10 md:max-xl:px-4'>
+            <div className='flex justify-center bg-white'>
+                <ul className='flex items-center w-full py-6 md:gap-10 container mx-auto px-4'>
                     <li className='flex mr-4 md:hidden'>
                         <Hamburger />
                     </li>
