@@ -1,12 +1,15 @@
-import { ReactComponent as SearchIcon } from '../../src/assets/Images/searchIcon.svg';
-import { ReactComponent as CartIcon } from '../../src/assets/Images/cart.svg';
-import { ReactComponent as ProfileIcon } from '../../src/assets/Images/profile.svg';
-import { ReactComponent as DownArrowIcon } from '../../src/assets/Images/downArrow.svg';
 import '../globalStyleSheet.css';
 import './Navbar.css';
+import { icons } from '../../src/assets/Icons/IconMappings'
 import Hamburger from '../Hamburger/Hamburger';
 
-function Navbar() {
+function Navbar({mockData}) {
+
+    const DownArrowIcon = icons[mockData.downArrowIcon];
+    const SearchIcon = icons[mockData.searchIcon];
+    const CartIcon = icons[mockData.cartIcon];
+    const ProfileIcon = icons[mockData.profileIcon];
+
     return (
         <>
             <div className='flex justify-center bg-white'>
@@ -15,13 +18,21 @@ function Navbar() {
                         <Hamburger />
                     </li>
                     <li className='flex mr-auto md:mr-0'>
-                        <h3 className='logo md:heading-xl md:text-4xl md:font-black'>SHOP.CO</h3>
+                        <h3 className='logo md:heading-xl md:text-4xl md:font-black'>{mockData.logo}</h3>
                     </li>
                     <li className='hidden md:flex md:gap-6 md:items-center mr-auto'>
-                        <a className='paragraph flex items-center gap-1'>Shop <DownArrowIcon width={16} height={16} fill="#000000" /></a>
-                        <a className='paragraph'>On Sale</a>
-                        <a className='paragraph'>New Arrivals</a>
-                        <a className='paragraph'>Brands</a>
+                        {mockData.navItems.map((item, index) => (
+                            item.isExpandable ? (
+                                <a key={index} className="paragraph flex items-center gap-1">
+                                    {item.text}
+                                    <DownArrowIcon width={16} height={16} fill="#000000" />
+                                </a>
+                            ) : (
+                                <a key={index} className="paragraph">
+                                    {item.text}
+                                </a>
+                            )
+                        ))}
                     </li>
                     <li className='hidden xl:flex searchInputContainer'>
                         <div className='flex items-center gap-3 searchInputWrapper paragraph py-3 px-4 rounded-full'>
