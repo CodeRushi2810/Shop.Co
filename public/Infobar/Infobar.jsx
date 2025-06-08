@@ -1,13 +1,16 @@
-import { ReactComponent as DismissIcon } from '../../src/assets/Images/cross.svg';
 import '../globalStyleSheet.css';
+import { icons } from '../../src/assets/Icons/IconMappings'
 
-function Infobar() {
+function Infobar({ mockData }) {
+
+    const DismissIcon = icons[mockData.dismissIcon];
+
     return (
         <>
             <div className='bg-black'>
                 <div className='flex justify-between items-center py-4 container mx-auto px-4'>
-                    <h1 className='text-white paragraph ml-auto'>Sign up and get 20% off to you first order.</h1>
-                    <a href="https://google.com" className='text-white paragraph underline ml-2 mr-auto'>Sign Up Now</a>
+                    <h1 className='text-white paragraph ml-auto'>{mockData.text}</h1>
+                    <a href="https://google.com" className='text-white paragraph underline ml-2 mr-auto'>{mockData.ctaText}</a>
                     <button className='hidden sm:block'>
                         <DismissIcon width={14} height={14} fill="white" />
                     </button>
