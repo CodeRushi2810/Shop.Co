@@ -17,13 +17,13 @@ function Navbar() {
                     <li className='flex mr-auto md:mr-0'>
                         <h3 className='logo md:heading-xl md:text-4xl md:font-black'>SHOP.CO</h3>
                     </li>
-                    <li className='hidden md:flex md:gap-6 md:items-center '>
+                    <li className='hidden md:flex md:gap-6 md:items-center mr-auto'>
                         <a className='paragraph flex items-center gap-1'>Shop <DownArrowIcon width={16} height={16} fill="#000000" /></a>
                         <a className='paragraph'>On Sale</a>
                         <a className='paragraph'>New Arrivals</a>
                         <a className='paragraph'>Brands</a>
                     </li>
-                    <li className='hidden md:flex searchInputContainer'>
+                    <li className='hidden xl:flex searchInputContainer'>
                         <div className='flex items-center gap-3 searchInputWrapper paragraph py-3 px-4 rounded-full'>
                             <div>
                                 <SearchIcon width={24} height={24} fill="#909090" />
@@ -32,7 +32,7 @@ function Navbar() {
                         </div>
                     </li>
                     <li className='flex gap-4'>
-                        <div className='md:*:hidden'>
+                        <div className='xl:hidden'>
                             <SearchIcon width={24} height={24} fill="#000000" />
                         </div>
                         <div>
