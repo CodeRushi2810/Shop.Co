@@ -1,4 +1,3 @@
-import '../globalStyleSheet.css';
 import './Navbar.css';
 import { icons } from '../../src/assets/Icons/IconMappings'
 import Hamburger from '../Hamburger/Hamburger';
@@ -39,7 +38,7 @@ function Navbar({mockData}) {
                             <div>
                                 <SearchIcon width={24} height={24} fill="#909090" />
                             </div>
-                            <input type="text" className='outline-none searchInputWrapper' placeholder='Search for products...' />
+                            <input type="text" className='outline-none searchInputWrapper' placeholder={mockData.searchInputPlaceholder} />
                         </div>
                     </li>
                     <li className='flex gap-4'>

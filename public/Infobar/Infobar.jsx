@@ -1,4 +1,3 @@
-import '../globalStyleSheet.css';
 import { icons } from '../../src/assets/Icons/IconMappings'
 
 function Infobar({ mockData }) {

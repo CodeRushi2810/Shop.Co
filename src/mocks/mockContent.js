@@ -20,6 +20,18 @@ import formal from '../assets/Images/formal.png';
 import party from '../assets/Images/party.png';
 import gym from '../assets/Images/gym.png';
 
+import visa from '../assets/Images/visa.png';
+import mastercard from '../assets/Images/mastercard.png';
+import paypal from '../assets/Images/paypal.png';
+import applepay from '../assets/Images/applepay.png';
+import googlepay from '../assets/Images/googlepay.png';
+
+import twitter from '../assets/Images/twitter.png';
+import facebook from '../assets/Images/facebook.png';
+import instagram from '../assets/Images/instagram.png';
+import github from '../assets/Images/github.png';
+
+
 const mockContentData = {
     status: 200,
     message: "Success",
@@ -37,6 +49,7 @@ const mockContentData = {
                 searchIcon: 'search',
                 cartIcon: 'cart',
                 profileIcon: 'profile',
+                searchInputPlaceholder: 'Search for products...',
                 navItems: [
                     {
                         text: 'Shop',
@@ -117,6 +130,12 @@ const mockContentData = {
                             {
                                 url: product3,
                             },
+                            {
+                                url: product4,
+                            },
+                            {
+                                url: product5,
+                            },
                         ]
                     },
                     {
@@ -130,7 +149,7 @@ const mockContentData = {
                                 url: product2,
                             },
                             {
-                                url: product2,
+                                url: product3,
                             }
                         ]
                     },
@@ -287,7 +306,7 @@ const mockContentData = {
                     },
                 ]
             },
-            browse: {
+            categories: {
                 heading: 'BROWSE BY DRESS STYLE',
                 categories: [
                     {
@@ -310,6 +329,174 @@ const mockContentData = {
                         cardImage: gym,
                         cardType: 'square'
                     },
+                ]
+            },
+            reviews: {
+                heading: 'OUR HAPPY CUSTOMERS',
+                reviews: [
+                    {
+                        reviewerName: 'Sarah M.',
+                        reviewerRating: 5,
+                        review: "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”",
+                        isVerified: false
+                    },
+                    {
+                        reviewerName: 'Alex K.',
+                        reviewerRating: 4.5,
+                        review: '"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.”',
+                        isVerified: true
+                    },
+                    {
+                        reviewerName: 'Lena G.',
+                        reviewerRating: 3,
+                        review: "Shop.co is my go-to store now. The delivery is fast, the quality is premium, and I always get compliments when I wear their outfits!",
+                        isVerified: false
+                    },
+                    {
+                        reviewerName: 'Marcus D.',
+                        reviewerRating: 3,
+                        review: "The clothes are nice and trendy, but I had to exchange a few items due to size issues. The return process was smooth though.",
+                        isVerified: true
+                    },
+                    {
+                        reviewerName: 'Priya S.',
+                        reviewerRating: 5,
+                        review: "Absolutely love their eco-conscious collection! It's refreshing to find a fashion brand that’s both stylish and sustainable.",
+                        isVerified: true
+                    },
+                    {
+                        reviewerName: 'Ethan R.',
+                        reviewerRating: 4,
+                        review: "Great value for the price. The fabrics feel good and the fit is generally accurate. Will definitely be buying more.",
+                        isVerified: false
+                    },
+                    {
+                        reviewerName: 'Natalie W.',
+                        reviewerRating: 5,
+                        review: "I’m so impressed with how quickly my order arrived. The packaging was elegant, and everything fit like a dream.",
+                        isVerified: true
+                    }
+                ]
+            },
+            newsletter: {
+                heading: 'STAY UPTO DATE ABOUT OUR LATEST OFFERS',
+                emailLogo: 'email',
+                emailInputPlaceholder: 'Enter your email address',
+                ctaText: 'Subscribe to Newsletter'
+            },
+            footer: {
+                logo: 'SHOP.CO',
+                subHeading: 'We have clothes that suits your style and which you’re proud to wear. From women to men.',
+                socialMedia: [
+                    {
+                        name: 'X',
+                        logo: twitter
+                    },
+                    {
+                        name: 'Facebook',
+                        logo: facebook
+                    },
+                    {
+                        name: 'Instagram',
+                        logo: instagram
+                    },
+                    {
+                        name: 'Github',
+                        logo: github
+                    },
+                ],
+                footerItems: [
+                    {
+                        title: 'COMPANY',
+                        items: [
+                            {
+                                name: 'About'
+                            },
+                            {
+                                name: 'Features'
+                            },
+                            {
+                                name: 'Works'
+                            },
+                            {
+                                name: 'Career'
+                            }
+                        ]
+                    },
+                    {
+                        title: 'HELP',
+                        items: [
+                            {
+                                name: 'Customer Support'
+                            },
+                            {
+                                name: 'Delivery Details'
+                            },
+                            {
+                                name: 'Terms & Conditions'
+                            },
+                            {
+                                name: 'Privacy Policy'
+                            }
+                        ]
+                    },
+                    {
+                        title: 'FAQ',
+                        items: [
+                            {
+                                name: 'Account'
+                            },
+                            {
+                                name: 'Manage Deliveries'
+                            },
+                            {
+                                name: 'Orders'
+                            },
+                            {
+                                name: 'Payment'
+                            }
+                        ]
+                    },
+                    {
+                        title: 'RESOURCES',
+                        items: [
+                            {
+                                name: 'Free eBook'
+                            },
+                            {
+                                name: 'Development Tutorial'
+                            },
+                            {
+                                name: 'How to - Blog'
+                            },
+                            {
+                                name: 'Youtube Playlist'
+                            }
+                        ]
+                    },
+                ],
+                footerText: '© 2000-2021, All rights reserved',
+                paymentMethods: [
+                    {
+                        name: 'Visa',
+                        logo: visa
+                    },
+                    {
+                        name: 'Master Card',
+                        logo: mastercard
+                    },
+                    {
+                        name: 'PayPal',
+                        logo: paypal
+                    },
+                    {
+                        name: 'Apple Pay',
+                        logo: applepay
+                    },
+                    {
+                        name: 'Google Pay',
+                        logo: googlepay
+                    }
                 ]
             }
         }
