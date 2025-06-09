@@ -1,4 +1,3 @@
-import '../../../../../public/globalStyleSheet.css';
 import './Banner.css';
 
 function Banner({ mockData }) {

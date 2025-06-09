@@ -1,15 +1,17 @@
-import '../globalStyleSheet.css';
 import './ProductCard.css';
 import { icons } from '../../src/assets/Icons/IconMappings';
 
-import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+
+import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 import { useRef } from 'react';
 
 function ProductCard({ data, defaultCurrency }) {
+    
     const prevRef = useRef(null);
     const nextRef = useRef(null);
 
@@ -32,7 +34,7 @@ function ProductCard({ data, defaultCurrency }) {
     const isDiscountProvided = data.discountedPrice < data.originalPrice;
 
     return (
-        <div className="relative group w-full">
+        <div className="group w-full">
             <div className="relative">
 
                 {/* Left Arrow */}
@@ -54,7 +56,7 @@ function ProductCard({ data, defaultCurrency }) {
                 </div>
 
                 <Swiper
-                    modules={[Navigation]}
+                    modules={[Navigation, Pagination]}
                     spaceBetween={50}
                     slidesPerView={1}
                     loop={true}
@@ -62,6 +64,7 @@ function ProductCard({ data, defaultCurrency }) {
                         prevEl: prevRef.current,
                         nextEl: nextRef.current,
                     }}
+                    pagination={{ clickable: true }}
                     onInit={(swiper) => {
                         swiper.params.navigation.prevEl = prevRef.current;
                         swiper.params.navigation.nextEl = nextRef.current;
@@ -79,10 +82,11 @@ function ProductCard({ data, defaultCurrency }) {
                         </SwiperSlide>
                     ))}
                 </Swiper>
+
             </div>
 
             <h1 className="subheading capitalize font-semibold mt-3">{data.name}</h1>
-            
+
             <div className="flex mt-1">
                 {stars}
                 <p className="ml-2 text-black font-medium">{data.ratings}</p>

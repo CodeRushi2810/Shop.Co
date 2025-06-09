@@ -1,4 +1,3 @@
-import '../../../../../public/globalStyleSheet.css';
 import ProductCard from '../../../../../public/ProductCard/ProductCard';
 
 function Products({ mockData }) {
