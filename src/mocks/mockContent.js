@@ -130,7 +130,7 @@ const mockContentData = {
                                 url: product2,
                             },
                             {
-                                url: product2,
+                                url: product3,
                             }
                         ]
                     },

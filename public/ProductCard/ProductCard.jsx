@@ -2,13 +2,12 @@ import '../globalStyleSheet.css';
 import './ProductCard.css';
 import { icons } from '../../src/assets/Icons/IconMappings';
 
-import { Navigation, Pagination, A11y } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 
-import { useRef, useEffect, useState } from 'react';
+import { useRef } from 'react';
 
 function ProductCard({ data, defaultCurrency }) {
     const prevRef = useRef(null);
@@ -55,18 +54,13 @@ function ProductCard({ data, defaultCurrency }) {
                 </div>
 
                 <Swiper
-                    modules={[Navigation, Pagination, A11y]}
+                    modules={[Navigation]}
                     spaceBetween={50}
                     slidesPerView={1}
+                    loop={true}
                     navigation={{
                         prevEl: prevRef.current,
                         nextEl: nextRef.current,
-                    }}
-                    pagination={{
-                        clickable: true,
-                        el: '.custom-bullets',
-                        bulletClass: 'swiper-bullet',
-                        bulletActiveClass: 'swiper-bullet-active',
                     }}
                     onInit={(swiper) => {
                         swiper.params.navigation.prevEl = prevRef.current;
@@ -85,11 +79,10 @@ function ProductCard({ data, defaultCurrency }) {
                         </SwiperSlide>
                     ))}
                 </Swiper>
-                
             </div>
 
             <h1 className="subheading capitalize font-semibold mt-3">{data.name}</h1>
-
+            
             <div className="flex mt-1">
                 {stars}
                 <p className="ml-2 text-black font-medium">{data.ratings}</p>
